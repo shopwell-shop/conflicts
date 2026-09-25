@@ -1,0 +1,41 @@
+name: Update Usage Documentation
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    
+    steps:
+      - name: Gather Token
+        uses: octo-sts/action@6177b4481c00308b3839969c3eca88c96a91775f
+        id: sts
+        with:
+          scope: shopwell/conflicts
+          identity: usage
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ steps.sts.outputs.token }}
+      
+      - name: Run documentation generator
+        run: node .github/generate-use-table.js
+      
+      - name: Commit and push if changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes detected. Skipping commit and push."
+            exit 0
+          fi
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add USAGES.md
+          git commit -m "docs: update Shopwell/conflicts usage documentation [automated]"
+          git push
