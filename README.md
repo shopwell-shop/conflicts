@@ -43,4 +43,4 @@ Shopwell 6 is an open source ecommerce platform built on Symfony and Vue.js. As 
 
 ## License
 
-This package is licensed under the MIT license.
+This Shopwell package is licensed under the Apache License 2.0. The upstream MIT declaration is preserved in [NOTICE](NOTICE).

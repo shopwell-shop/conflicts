@@ -2,7 +2,7 @@
   "name": "shopwell/conflicts",
   "type": "metapackage",
   "description": "Shopwell 6 conflicting packages",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "require": {
     "shopwell/core": ">=6.6.10.7 <6.7.0.0 || >=6.7.1.0"
   },

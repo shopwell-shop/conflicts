@@ -1,0 +1,20 @@
+Shopwell Conflicts
+Copyright 2026 Shopwell
+
+This Shopwell project is licensed under the Apache License 2.0; see LICENSE.
+
+This product includes software originally developed by Shopware.
+Upstream source: https://github.com/shopware/conflicts
+
+The upstream repository declares the project as MIT licensed but does not
+contain a standalone license-text file at the recorded baseline. The exact
+upstream declarations are preserved below; no copyright notice has been invented.
+
+==========================================================================
+Upstream License Declarations — shopware/conflicts
+==========================================================================
+README.md:
+This package is licensed under the MIT license.
+
+composer.json:
+"license": "MIT"
