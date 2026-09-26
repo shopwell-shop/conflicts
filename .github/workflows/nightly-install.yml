@@ -28,7 +28,7 @@ jobs:
     strategy: ${{ fromJson(needs.generate-matrix.outputs.matrix) }}
     steps:
       - name: Setup Shopwell
-        uses: shopwell/setup-shopwell@v2
+        uses: shopwell-shop/setup-shopwell@main
         with:
           env: prod
           shopwell-version: ${{ matrix.version }}
@@ -41,4 +41,3 @@ jobs:
           bin/console store:download -p SwagPlatformDemoData
           bin/console plugin:refresh
           bin/console plugin:install --activate SwagPlatformDemoData
-

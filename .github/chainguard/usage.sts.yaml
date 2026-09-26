@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject: repo:shopwell/conflicts:ref:refs/heads/main
+subject: repo:shopwell-shop/conflicts:ref:refs/heads/trunk
 
 permissions:
   contents: write
