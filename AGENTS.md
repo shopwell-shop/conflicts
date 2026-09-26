@@ -23,8 +23,12 @@ must read this file before changing files in this repository.
 
   ```bash
   ../sync-upstream/bin/syncctl audit-license conflicts
+  ../sync-upstream/bin/syncctl audit-upstream-dependencies conflicts
   ```
 
-- A failed license audit blocks commit, push, release, and sync completion.
+- Runtime code and workflows must not depend on `shopware/*`, `shopwarelabs/*`,
+  `@shopware-ag/*`, or their GitHub repositories. A `shopwell-shop/*` Action
+  dependency must have a matching entry in the control registry.
+- A failed license or dependency audit blocks commit, push, release, and sync completion.
 - Changes to LICENSE, NOTICE, project-owned manifests, or upstream license inventory
   must be reflected in `../sync-upstream/config/repos.json` in the same task.
