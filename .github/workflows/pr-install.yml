@@ -112,7 +112,7 @@ jobs:
                   "symfony": {
                       "allow-contrib": true,
                       "endpoint": [
-                          "https://raw.githubusercontent.com/shopwell/recipes/flex/main/index.json",
+                          "https://raw.githubusercontent.com/shopwell-shop/recipes/flex/main/index.json",
                           "flex://defaults"
                       ]
                   }

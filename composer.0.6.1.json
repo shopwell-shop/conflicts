@@ -1,16 +1,18 @@
 {
-  "name": "shopwell/conflicts",
-  "type": "metapackage",
-  "description": "Shopwell 6 conflicting packages",
-  "license": "Apache-2.0",
-  "require": {
-    "shopwell/core": ">=6.7.11.0"
-  },
-  "conflict": {
-    "phenx/php-font-lib": "<0.5.5",
-    "symfony/symfony": "*",
-    "symfony/web-profiler-bundle": "<7.3.0",
-    "zircote/swagger-php": "4.8.7",
-    "shopwell/k8s-meta": "<=1.0.3"
-  }
+    "name": "shopwell/conflicts",
+    "type": "metapackage",
+    "description": "Shopwell 6 conflicting packages",
+    "license": "Apache-2.0",
+    "require": {
+        "shopwell/core": ">=6.7.11.0"
+    },
+    "conflict": {
+        "phenx/php-font-lib": "<0.5.5",
+        "symfony/symfony": "*",
+        "symfony/web-profiler-bundle": "<7.3.0",
+        "symfony/polyfill-php84": "1.38.0",
+        "zircote/swagger-php": "4.8.7",
+        "shopwell/k8s-meta": "<=1.0.3",
+        "twig/twig": ">=3.28"
+    }
 }
