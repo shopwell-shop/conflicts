@@ -4,5 +4,6 @@ This document shows which version of `shopwell/conflicts` is used by each versio
 
 | Shopwell Version | Conflicts Version |
 |-----------------|-------------------|
+| v6.7.16.0 | 0.6.3 |
 | v6.7.15.0 | 0.6.3 |
 | v6.7.0.0 | 0.6.3 |
