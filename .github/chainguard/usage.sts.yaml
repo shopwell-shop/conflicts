@@ -1,5 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject: repo:shopwell-shop/conflicts:ref:refs/heads/main
+subject: repo:shopwell-shop@329940059/conflicts@1388416406:ref:refs/heads/main
+claim_pattern:
+  workflow_ref: shopwell-shop/conflicts/\.github/workflows/update-usage-docs\.yml@refs/heads/main
 
 permissions:
   contents: write
