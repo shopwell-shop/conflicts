@@ -2,7 +2,7 @@ name: Deploy Composer Repository
 
 on:
   push:
-    branches: [trunk]
+    branches: [main]
     paths:
       - "composer.*.json"
       - "bin/generate-local-repository.php"
